@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+- 0.12.3
+before_deploy:
+- gulp build
+- npm version ${TRAVIS_TAG} --no-git-tag-version
+deploy:
+  provider: npm
+  email: adamhutchinson@silktide.com
+  on:
+    tags: true
+  api_key:
+    secure: SM+8U8bOxC0Czenc2rTat/XnoeHC2c+ssmZbqFZqUdvG1s1ZcTM0xU6EB2MVyIWaUuCPFhhp/88Xb1hariEiTSsrXTgTduum/8SbpnbRe5jpaoY3ROE5cVe6xE1RsY5wjw3d/Uq7HN58p4Z9GqA6yBU98MINViVb0SrkhSU9sDWoolg6I7cObZR7a5IYAl7+UXJmuSwA8R8AmaYcZdBbqvip9Fm4L/ZzEZ9kRfN+dqb/+0o8gBjA1/6oRZq8nt8s1Z0YdplXA5y1qKk9/hC6+CHQWp6W9ieMgvNmNTZPej2pm6naPo20/WbftjjjFFiCeje8r6HKVit7xcFhsbkZxIQ8/UZ9VHlx2/ZmNWkIKFNW4mWz7/YRe8gaIv6m02zi28rx5sf8Vayl8Hq+d1JRwgOp9MF4KshbRKdRZGdQRL6OcrOW+++YrU7qIwiFooD4Xirwy9GBoWnxq6qa9dFZSPcRbn17ylsoikaaO5iWZ9ynQOWwBEJ9Ak75X37/Mvz+VWu25OvJt3I1Jv6Uu6jyATP82A8duHTF3IprPwKQEEh8/3HmFl0Hx03Bex93ewVxXMdw3+pkmrga+ssgHBXsncRvmX3N0XwUTMSAOX5Svwu5ZIaIO6cVi8MpNS7G36wwMB2cKyqoyHy5xNvF8xqfXce2VVc48ASnLAy6FGYGipY=
