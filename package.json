@@ -1,0 +1,11 @@
+{
+  "name": "react-error-wrapper",
+  "version": "0.0.0",
+  "description": "Wraps a react component and gracefully handles errors in the render method",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
