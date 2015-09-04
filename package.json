@@ -2,10 +2,15 @@
   "name": "react-error-wrapper",
   "version": "0.0.0",
   "description": "Wraps a react component and gracefully handles errors in the render method",
-  "main": "index.js",
+  "main": "lib/react-error-wrapper.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "babel -d lib/ src/",
+    "prepublish": "npm run compile"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^5.8.23",
+    "gulp": "^3.9.0"
+  }
 }
