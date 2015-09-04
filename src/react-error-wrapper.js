@@ -1,13 +1,17 @@
 import React from 'react';
 
-export default function wrapComponent(Component) {
-  const {render} = Component;
+export default function wrapComponent(Component, logErrors = false) {
+  return class extends Component {
+    render() {
+      try {
+        return super.render();
+      } catch (e) {
+        if (logErrors) {
+          console.log(e);
+        }
 
-  Component.render = function () {
-    try {
-      render.apply(Component, ...arguments);
-    } catch (e) {
-      return <div />
+        return <div />;
+      }
     }
-  } 
+  }
 }

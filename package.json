@@ -1,8 +1,8 @@
 {
-  "name": "react-error-wrapper",
+  "name": "react-error-suppression",
   "version": "0.0.0",
   "description": "Wraps a react component and gracefully handles errors in the render method",
-  "main": "lib/react-error-wrapper.js",
+  "main": "lib/react-error-suppression.js",
   "scripts": {
     "compile": "babel -d lib/ src/",
     "prepublish": "npm run compile"
