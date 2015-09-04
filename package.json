@@ -13,6 +13,7 @@
     "babel": "^5.8.23"
   },
   "dependencies": {
+    "lodash": "^3.10.1",
     "react": "^0.13.3"
   }
 }

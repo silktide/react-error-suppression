@@ -1,4 +1,5 @@
 import React from 'react';
+import {merge} from 'lodash';
 
 let errorLogging = false;
 
@@ -21,7 +22,7 @@ class WrappedComponent extends React.Component {
   }
 }
 
-const ReactWithErrorSuppression = Object.assign({} , React,  {
+const ReactWithErrorSuppression = merge({} , React,  {
   Component: WrappedComponent,
   enableErrorLogging() {
     errorLogging = true;
