@@ -1,3 +1,5 @@
+import React from 'react';
+
 export default function wrapComponent(Component) {
   const {render} = Component;
 

@@ -10,6 +10,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel": "^5.8.23",
+    "babel": "^5.8.23"
+  },
+  "dependencies": {
+    "react": "^0.13.3"
   }
 }
