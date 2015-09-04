@@ -15,7 +15,7 @@ class WrappedComponent extends React.Component {
         if (errorLogging) {
           console.log('error in component', e);
         }
-        return <div />
+        return <span />
       }
     }
   }
