@@ -1,4 +1,7 @@
 ---
+app: react-error-suppression
 type: deprecated
 source: open
+language: php
+protected: false
 ...
